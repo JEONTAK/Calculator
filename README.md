@@ -133,7 +133,8 @@ output
 ```
 type(scope) : short summary
 
-[body] 
+[body]
+
 [footer]
 ```
 
