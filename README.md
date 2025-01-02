@@ -100,16 +100,18 @@ input
 calculator
 - [ ] Calculator extends Operation, implements HistoryManager : 연산 수행 및 결과 저장
 - [ ] Operation : 사칙 연산 수행 method
-- [ ] HistoryManager : 계산 결과 관리
+- [ ] CalculationDataManager : 계산 결과 관리
 
 exception
-- [ ] Exception : Exception 저장 및 알맞게 출력
+- [ ] ExceptionHandler : Exception 저장 및 알맞게 출력
 
 output
 - [ ] OutputHandler : 콘솔에 알맞게 출력
 
 #### Design
 
+##### Class Diagrom
+![img.png](Lv2Class.png)
 
 ---
 ## Lv 3. Enum, 제네릭, 람다 & 스트림을 이해한 계산기 만들기
@@ -154,9 +156,9 @@ type(scope) : short summary
 <br>build: 빌드 관련 파일 변경.
 
 ✨ : feat
-🐛 : fix
-📝 : docs
-🔥 : chore
+<br>🐛 : fix
+<br>📝 : docs
+<br>🔥 : chore
 ---
 
 ## Code Convention
@@ -190,19 +192,19 @@ class : 명사형
 
 #### Association
 정확히 하나 : 1
-0 or 1 : 0..1
-0개 이상 : 0..
-1개 이상 : 1..*
-정확한 숫자 : 3..4 or 6
-복잡한 관계 : 0..1, 3..4, 6.* -> 2,5 이외의 수 의미
+<br> 0 or 1 : 0..1
+<br> 0개 이상 : 0..
+<br> 1개 이상 : 1..*
+<br> 정확한 숫자 : 3..4 or 6
+<br> 복잡한 관계 : 0..1, 3..4, 6.* -> 2,5 이외의 수 의미
 
 #### Relation
 
 Interface : << >>
-Abstract : Italic
-Dependency : 점선
-Association : 실선
-Inheritance : 속이 빈 화살표를 가진 실선
-Realization : 속이 빈 화살표를 가진 점선
-Aggregation : 속이 빈 마름모를 가진 실선
-Composition : 속이 찬 마름모를 가진 실선
+<br> Abstract : Italic
+<br> Dependency : 점선
+<br> Association : 실선
+<br> Inheritance : 속이 빈 화살표를 가진 실선
+<br> Realization : 속이 빈 화살표를 가진 점선
+<br> Aggregation : 속이 빈 마름모를 가진 실선
+<br> Composition : 속이 찬 마름모를 가진 실선
