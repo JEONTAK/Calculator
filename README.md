@@ -110,7 +110,8 @@ output
 
 #### Design
 
-##### Class Diagrom
+##### Class Diagram
+
 ![img.png](Lv2Class.png)
 
 ---
@@ -158,12 +159,17 @@ type(scope) : short summary
 ✨ : feat
 <br>🐛 : fix
 <br>📝 : docs
-<br>🔥 : chore
+<br>🎨 : style
+<br>🔨 : refactor
+<br>🚀 : perf
+<br>✅ : test
+<br>📦 : chore
+<br>🗑️ : delete
 ---
 
 ## Code Convention
 
-<br>celass name : PascalCase(ex: MyClass)
+<br>class name : PascalCase(ex: MyClass)
 <br>method and var : camelCase(ex: userName)
 <br>const : UPPER_SNAKE_CASE(ex: MAX_LENGTH)
 
