@@ -27,7 +27,38 @@
   - [ ] 연산 오류 발생
     - [ ] 나눗셈 연산에서 분모에 0이 들어가는 경우
 
-#### Design
+#### Design (Pseudocode)
+```
+while(true){
+            Get 2 Integer a, b
+            if(2 Integer < 0){
+                negativeIntegerExpection
+            }
+
+            Get Operation
+            if(Operation is not in ('+','-','/','*')){
+                notOperationException
+            }
+
+            switch(Operation){
+                case '+':
+                    Print a + b
+                case '-':
+                    Print a - b
+                case '*':
+                    Print a * b
+                case '/':
+                    if(b is 0){
+                        denominatorIsZeroException
+                    }
+                    Print a / b
+            }
+            
+            Get operationAgain
+            if(operationAgain is 'exit')
+                finish
+        }
+```
 
 ---
 ## Lv 2. 클래스를 적용해 기본적인 연산을 수행할 수 있는 계산기 만들기
