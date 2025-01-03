@@ -18,17 +18,18 @@ public class Calculator {
         this.resultList = result;
     }
 
-    public int calculate(int num1, int num2, char oper){
-        switch(oper){
+    public int calculate(int num1, int num2, char operator){
+        switch(operator){
             case '+':
                 return num1 + num2;
             case '-':
                 return num1 - num2;
             case '*':
                 return num1 * num2;
-            default :
+            case '/':
                 return num1 / num2;
-
+            default :
+                return 0;
         }
     }
 
@@ -37,6 +38,11 @@ public class Calculator {
     }
 
     public void removeFirst(){
-        resultList.remove(0);
+        if (resultList.isEmpty()) {
+            System.out.println("현재 저장된 연산 결과가 없습니다!");
+        }else{
+            System.out.println("저장된 연산 결과 " + resultList.get(0) + "이 삭제 되었습니다.");
+            resultList.remove(0);
+        }
     }
 }
