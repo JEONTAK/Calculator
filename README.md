@@ -71,48 +71,39 @@ while(true){
 
 #### Definition
 
-- [ ] 사칙연산 수행 후, 결과값 반환 method 구현
-- [ ] 연산 결과 저장하는 Collection 타입 필드를 가진 Calculator 클래스 생성
+- [x] 사칙연산 수행 후, 결과값 반환 method 구현
+- [x] 연산 결과 저장하는 Collection 타입 필드를 가진 Calculator 클래스 생성
 
 
-- [ ] Lv 1에서 구현한 Main method에 Calculator 클래스가 활용 될 수 있도록 수정
-  - [ ] 연산 수행 역할 : Calculator 클래스
-  - [ ] 연산 결과 : Calculator 클래스의 Collection 타입 필드에 저장
+- [x] Lv 1에서 구현한 Main method에 Calculator 클래스가 활용 될 수 있도록 수정
+  - [x] 연산 수행 역할 : Calculator 클래스
+  - [x] 연산 결과 : Calculator 클래스의 Collection 타입 필드에 저장
 
 
-- [ ] App 클래스의 Main method에서 Calculator 클래스의 연산 결과를 저장하고 있는 Collection 필드에 직접 접근 하지 못하게 캡슐화
-  - [ ] 간접 접근을 통해 가져올 수 있도록 구현(Getter)
-  - [ ] 간접 접근을 통해 수정할 수 있도록 구현(Setter)
+- [x] App 클래스의 Main method에서 Calculator 클래스의 연산 결과를 저장하고 있는 Collection 필드에 직접 접근 하지 못하게 캡슐화
+  - [x] 간접 접근을 통해 가져올 수 있도록 구현(Getter)
+  - [x] 간접 접근을 통해 수정할 수 있도록 구현(Setter)
 
 
-- [ ] Calculator 클래스에 저장된 연산 결과들 중 가장 먼저 저장된 데이터를 삭제하는 기능
-  - [ ] App 클래스의 Main method에서 삭제 method가 활용 될 수 있도록 수정
+- [x] Calculator 클래스에 저장된 연산 결과들 중 가장 먼저 저장된 데이터를 삭제하는 기능
+  - [x] App 클래스의 Main method에서 삭제 method가 활용 될 수 있도록 수정
 
 
 ##### Class Configuration
 
-app
-- [ ] App : 메인 실행 클래스
+**김선용 튜터님 피드백**
+Lv 2. 요구사항에 맞게 App class와 Calculator class 두가지로만 구현!
 
-input
-- [ ] InputHandler : 사용자 입력 처리
+app
+- [x] App : 메인 실행 클래스
 
 calculator
-- [ ] Calculator extends Operation, implements HistoryManager : 연산 수행 및 결과 저장
-- [ ] Operation : 사칙 연산 수행 method
-- [ ] CalculationDataManager : 계산 결과 관리
-
-exception
-- [ ] ExceptionHandler : Exception 저장 및 알맞게 출력
-
-output
-- [ ] OutputHandler : 콘솔에 알맞게 출력
+- [x] Calculator: 연산 수행 및 결과 저장
 
 #### Design
 
 ##### Class Diagram
-
-![img.png](Lv2Class.png)
+![Lv2.ClassDiagram.png](Lv2.ClassDiagram.png)
 
 ---
 ## Lv 3. Enum, 제네릭, 람다 & 스트림을 이해한 계산기 만들기
@@ -156,6 +147,8 @@ type(scope) : short summary
 <br>perf: 성능 개선을 위한 변경.
 <br>ci: CI 설정 변경.
 <br>build: 빌드 관련 파일 변경.
+
+#### Type Emoji
 
 ✨ : feat
 <br>🐛 : fix
