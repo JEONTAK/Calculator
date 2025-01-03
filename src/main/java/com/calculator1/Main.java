@@ -21,7 +21,7 @@ public class Main {
                 //사칙 연산 기호 받기
                 char operation = br.readLine().charAt(0);
                 //만약 사칙 연산 기호가 맞다면
-                if (operation == '+' || operation == '-' || operation == '*' || operation == '*') {
+                if (operation == '+' || operation == '-' || operation == '*' || operation == '/') {
                     switch(operation){
                         case '+':
                             System.out.println(num1 + " + " + num2 + " = " + (num1 + num2) + " 입니다.");
