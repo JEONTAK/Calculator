@@ -94,6 +94,10 @@ while(true){
 **김선용 튜터님 피드백**
 Lv 2. 요구사항에 맞게 App class와 Calculator class 두가지로만 구현!
 
+**허지회 튜터님 피드백**
+1. Getter, Setter
+2. 책임을 어느 클래스에 지게 할 것인지 생각! ex) list empty관련 처리를 removeFirst()(calculator)에서 책임을 질지, App에서 책임을 질지 / (calculator에서 처리 하는 것이 나을 듯)
+
 app
 - [x] App : 메인 실행 클래스
 
